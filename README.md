@@ -19,7 +19,23 @@ This repository contains the backend for a food ordering system built using Fast
 
 ## Project Structure
 
-. ├── backend │ ├── app │ │ ├── init.py │ │ ├── crud.py │ │ ├── database.py │ │ ├── main.py │ │ ├── models.py │ │ ├── schemas.py │ │ ├── unit_tests.py │ │ └── requirements.txt │ ├── Dockerfile │ ├── integration_test.py │ └── requirements.txt ├── README.md └── .DS_Store
+.
+├── backend
+│   ├── app
+│   │   ├── __init__.py         # Package initializer
+│   │   ├── crud.py             # Database operations
+│   │   ├── database.py         # Database connection setup
+│   │   ├── main.py             # FastAPI application entry point
+│   │   ├── models.py           # Database models
+│   │   ├── schemas.py          # Pydantic schemas for validation
+│   │   ├── unit_tests.py       # Unit tests for API endpoints
+│   │   └── requirements.txt    # Python dependencies
+│   ├── Dockerfile              # Docker configuration
+│   ├── integration_test.py     # Integration tests for the app
+│   └── requirements.txt        # Project-wide dependencies
+├── README.md                   # Project documentation
+└── .DS_Store                   # MacOS metadata file (can be ignored)
+
 
 
 
