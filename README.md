@@ -43,9 +43,12 @@ This repository contains the backend for a **Food Ordering System** built using 
 ├── README.md                   # Project documentation
 └── .DS_Store                   # MacOS metadata file (can be ignored)
 
+```
+
 ---
 
-##📥 Installation
+## **📥 Installation**
+
 Prerequisites
 Ensure Python 3.9+ is installed. Download it here.
 
@@ -68,7 +71,7 @@ pip install -r requirements.txt
 
 ---
 
-##▶️ Running the Application
+## ▶️ **Running the Application**
 Start the FastAPI application:
 
 uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
@@ -76,13 +79,13 @@ Visit the app at http://localhost:8000.
 
 ---
 
-##🧪 Running Tests
+## **🧪 Running Tests**
 Run unit and integration tests:
 pytest
 
 ---
 
-##🐳 Docker Support
+## **🐳 Docker Support**
 Build the Docker Image:
 docker build -t food-ordering-backend .
 
@@ -92,5 +95,5 @@ Access the app at http://localhost:8000.
 
 ---
 
-##🙌 Contributing
+## 🙌 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests
