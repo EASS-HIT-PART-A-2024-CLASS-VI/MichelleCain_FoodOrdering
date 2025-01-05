@@ -1,67 +1,99 @@
-# Food Ordering Backend
+# 🥡 Food Ordering System - Backend  
 
-This project provides a backend for a food ordering system built using **FastAPI**. The application allows users to manage food items and place orders. It includes basic CRUD (Create, Read, Update, Delete) functionality for items and integrates with a simple database.
+This repository contains the backend for a **Food Ordering System** built using **FastAPI**. It enables users to place food orders, manage menu items, and handle related functionalities efficiently, all while adhering to **SOLID principles** for clean and modular design.  
 
-## Features
+---
 
-- **CRUD operations** for food items
-- FastAPI-based backend
-- Simple testing using `pytest` and `TestClient`
-- Docker support for easy deployment
+## 🚀 Features  
 
-## Project Structure
+- **🛒 Food Order Management**: Create and manage food items seamlessly.  
+- **📋 Menu Management**: Add, update, and delete menu items with ease.  
+- **🧪 Test Integration**: Comprehensive tests to ensure application robustness.  
+- **🐳 Docker Support**: Ready for containerization for hassle-free deployment and scaling.  
 
-The project is organized as follows:
+---
 
-# Food Ordering Backend
+## 🛠️ Technologies Used  
 
-This project implements a simple backend for a food ordering system using FastAPI.
+- **🌐 FastAPI**: Modern, high-performance web framework for APIs.  
+- **⚡ Uvicorn**: Blazing-fast ASGI server for serving the app.  
+- **✅ Pydantic**: Simplifies data validation and settings management.  
+- **🐋 Docker**: Containerization for portability and scalability.  
+- **🧪 pytest**: Unit and integration testing framework.  
 
-## Requirements
+---
 
-- Python 3.9+
-- Docker (for containerization)
-- FastAPI
-- Uvicorn (for serving FastAPI app)
+## 📂 Project Structure  
 
-## Setup
+```plaintext
+.
+├── backend
+│   ├── app
+│   │   ├── __init__.py         # Package initializer
+│   │   ├── crud.py             # Database operations
+│   │   ├── database.py         # Database connection setup
+│   │   ├── main.py             # FastAPI application entry point
+│   │   ├── models.py           # Database models
+│   │   ├── schemas.py          # Pydantic schemas for validation
+│   │   ├── unit_tests.py       # Unit tests for API endpoints
+│   │   └── requirements.txt    # Python dependencies
+│   ├── Dockerfile              # Docker configuration
+│   ├── integration_test.py     # Integration tests for the app
+│   └── requirements.txt        # Project-wide dependencies
+├── README.md                   # Project documentation
+└── .DS_Store                   # MacOS metadata file (can be ignored)
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-# Food Ordering Backend
+```
 
-This project implements a simple backend for a food ordering system using FastAPI.
+---
 
-## Requirements
+## **📥 Installation**
 
-- Python 3.9+
-- Docker (for containerization)
-- FastAPI
-- Uvicorn (for serving FastAPI app)
+Prerequisites
+Ensure Python 3.9+ is installed. Download it here.
 
-## Setup
+Steps
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url># Food Ordering Backend
+Clone the Repository:
+git clone https://github.com/yourusername/yourrepository.git
+cd yourrepository
 
-This project implements a simple backend for a food ordering system using FastAPI.
+Create a Virtual Environment:
+python3 -m venv venv
+Activate the Virtual Environment:
 
-# Food Ordering Backend
+Windows:
+.\venv\Scripts\activate
+macOS/Linux:
+source venv/bin/activate
+Install Dependencies:
+pip install -r requirements.txt
 
-This project implements a simple backend for a food ordering system using FastAPI.
+---
 
-## Requirements
+## ▶️ **Running the Application**
+Start the FastAPI application:
 
-- Python 3.9+
-- Docker (for containerization)
-- FastAPI
-- Uvicorn (for serving FastAPI app)
+uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
+Visit the app at http://localhost:8000.
 
-## Setup
+---
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
+## **🧪 Running Tests**
+Run unit and integration tests:
+pytest
 
+---
+
+## **🐳 Docker Support**
+Build the Docker Image:
+docker build -t food-ordering-backend .
+
+Run the Docker Container:
+docker run -d -p 8000:8000 food-ordering-backend
+Access the app at http://localhost:8000.
+
+---
+
+## 🙌 Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests
