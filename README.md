@@ -1,25 +1,38 @@
-# 🥡 Food Ordering System - Backend  
-
-This repository contains the backend for a **Food Ordering System** built using **FastAPI**. It enables users to place food orders, manage menu items, and handle related functionalities efficiently, all while adhering to **SOLID principles** for clean and modular design.  
+# 🍔 Food Ordering System
+This repository contains the code for a Food Ordering System that allows users to order food online, manage menu items, and handle food orders efficiently. The backend is built using FastAPI and follows SOLID principles for clean and modular design. 
 
 ---
 
 ## 🚀 Features  
 
-- **🛒 Food Order Management**: Create and manage food items seamlessly.  
-- **📋 Menu Management**: Add, update, and delete menu items with ease.  
-- **🧪 Test Integration**: Comprehensive tests to ensure application robustness.  
-- **🐳 Docker Support**: Ready for containerization for hassle-free deployment and scaling.  
+Currently Available:
+Backend:
+🛒 Order Management: Create, view, and manage food orders.
+📋 Menu Management: Add, update, and delete menu items.
+🧪 Testing: Unit and integration tests to ensure the backend works as expected.
+🐋 Docker Support: Ready for containerization with Docker for easy deployment.
+To Be Continued (Frontend & More):
+Frontend:
+🌐 User Interface: A clean and responsive web interface for placing orders and managing the menu.
+🖱️ User Authentication: Secure login and registration features.
+🍽️ Order Placement: Users can browse the menu, select items, and place orders.
+📦 Order Tracking: A system to track the status of placed orders in real-time.
+💬 User Feedback: Allow users to leave reviews and ratings for the menu items.
 
 ---
 
 ## 🛠️ Technologies Used  
 
-- **🌐 FastAPI**: Modern, high-performance web framework for APIs.  
-- **⚡ Uvicorn**: Blazing-fast ASGI server for serving the app.  
-- **✅ Pydantic**: Simplifies data validation and settings management.  
-- **🐋 Docker**: Containerization for portability and scalability.  
-- **🧪 pytest**: Unit and integration testing framework.  
+Backend:
+🌐 FastAPI: Modern, high-performance web framework for APIs.
+⚡ Uvicorn: Blazing-fast ASGI server for serving the app.
+✅ Pydantic: Simplifies data validation and settings management.
+🐋 Docker: Containerization for portability and scalability.
+🧪 pytest: Unit and integration testing framework.
+Frontend (To Be Continued):
+React: JavaScript library for building user interfaces.
+Redux: State management for frontend applications.
+Axios: Promise-based HTTP client for making API requests
 
 ---
 
