@@ -55,30 +55,37 @@ Ensure Python 3.9+ is installed. Download it here.
 Steps:
 
 Clone the Repository:
+```
 git clone https://github.com/yourusername/yourrepository.git
 cd yourrepository
-
+```
 Create a Virtual Environment:
+```
 python3 -m venv venv
+```
 Activate the Virtual Environment:
 
 Windows:
+```
 .\venv\Scripts\activate
-
+```
 macOS/Linux:
+```
 source venv/bin/activate
+```
 
 Install Dependencies:
+```
 pip install -r requirements.txt
-
+```
 
 ---
 
 ## ▶️ **Running the Application**
 Start the FastAPI application:
-
+```
 uvicorn backend.app.main:app --host 0.0.0.0 --port 8000
-
+```
 Visit the app at http://localhost:8000.
 
 
@@ -86,24 +93,25 @@ Visit the app at http://localhost:8000.
 
 ## **🧪 Running Tests**
 Run unit and integration tests with the following command:
-
+```
 pytest
-
+```
 To run specific tests:
+```
 pytest path/to/test_file.py
-
+```
 
 ---
 
 ## **🐳 Docker Support**
 Build the Docker Image:
-
+```
 docker build -t food-ordering-backend .
-
+```
 Run the Docker Container:
-
+```
 docker run -d -p 8000:8000 food-ordering-backend
-
+```
 Access the app at http://localhost:8000.
 
 
