@@ -1,4 +1,4 @@
-# 🍔 Food Ordering System
+# 🍔BiteMe: Food Ordering System
 This repository contains the code for a Food Ordering System that allows users to order food online, manage menu items, and handle food orders efficiently. The backend is built using FastAPI and follows SOLID principles for clean and modular design. 
 
 ---
