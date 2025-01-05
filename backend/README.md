@@ -52,7 +52,7 @@ This repository contains the backend for a **Food Ordering System** built using 
 Prerequisites
 Ensure Python 3.9+ is installed. Download it here.
 
-Steps
+Steps:
 
 Clone the Repository:
 git clone https://github.com/yourusername/yourrepository.git
