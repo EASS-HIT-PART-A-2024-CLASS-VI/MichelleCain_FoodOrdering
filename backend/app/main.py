@@ -21,11 +21,7 @@ def get_orders():
 def create_order(order: FoodItem):
     orders_db.append(order)
     return {"message": "Order added successfully!", "order": order}
-from fastapi import FastAPI
-
-app = FastAPI()
 
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the food ordering API!"}
-
