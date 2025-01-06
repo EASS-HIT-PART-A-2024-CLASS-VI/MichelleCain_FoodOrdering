@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from app.main import app
+from app.main import app, orders_db
 
 client = TestClient(app)
 
@@ -12,10 +12,10 @@ def test_create_item():
     
     # Ensure the response contains the success message and the created order
     assert response.json() == {"message": "Order added successfully!", "order": {"name": "Pizza", "quantity": 2}}
-
+    
     # Ensure the order was added to the in-memory database
-    created_order = next((order for order in orders_db if order["name"] == "Pizza"), None)
+    created_order = next((order for order in orders_db if order.name == "Pizza"), None)
     assert created_order is not None
-    assert created_order["name"] == "Pizza"
-    assert created_order["quantity"] == 2
+    assert created_order.name == "Pizza"
+    assert created_order.quantity == 2
 
