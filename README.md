@@ -54,7 +54,7 @@ Frontend (To Be Continued):
 │   ├── integration_test.py     # Integration tests for the app
 │   └── requirements.txt        # Project-wide dependencies
 ├── README.md                   # Project documentation
-└── .DS_Store                   # MacOS metadata file (can be ignored)
+
 
 ```
 
