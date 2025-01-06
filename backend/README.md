@@ -26,7 +26,7 @@ This repository contains the backend for a **Food Ordering System** built using 
 ## 📂 Project Structure  
 
 ```plaintext
-.
+
 ├── backend
 │   ├── app
 │   │   ├── __init__.py         # Package initializer
@@ -41,7 +41,7 @@ This repository contains the backend for a **Food Ordering System** built using 
 │   ├── integration_test.py     # Integration tests for the app
 │   └── requirements.txt        # Project-wide dependencies
 ├── README.md                   # Project documentation
-└── .DS_Store                   # MacOS metadata file (can be ignored)
+
 
 ```
 
