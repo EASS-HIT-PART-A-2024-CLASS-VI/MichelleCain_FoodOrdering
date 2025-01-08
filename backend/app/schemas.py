@@ -5,4 +5,7 @@ class ItemCreate(BaseModel):
     description: str
     price: float
 
+class Item(ItemCreate):
+    id: str
+
 
