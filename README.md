@@ -15,7 +15,7 @@ Backend:
 - 📋 Menu Management: Add, update, and delete menu items.
 - 🧪 Testing: Unit and integration tests to ensure the backend works as expected.
 - 🐋 Docker Support: Ready for containerization with Docker for easy deployment.
-To Be Continued (Frontend & More):
+
 Frontend:
 - 🌐 User Interface: A clean and responsive web interface for placing orders and managing the menu.
 - 🖱️ User Authentication: Secure login and registration features.
@@ -42,21 +42,27 @@ Frontend (To Be Continued):
 ## 📂 Project Structure  
 
 ```plaintext
-.
+
 ├── backend
 │   ├── app
 │   │   ├── __init__.py         # Package initializer
 │   │   ├── crud.py             # Database operations
 │   │   ├── database.py         # Database connection setup
 │   │   ├── main.py             # FastAPI application entry point
-│   │   ├── models.py           # Database models
-│   │   ├── schemas.py          # Pydantic schemas for validation
-│   │   ├── unit_tests.py       # Unit tests for API endpoints
-│   │   └── requirements.txt    # Python dependencies
-│   ├── Dockerfile              # Docker configuration
-│   ├── integration_test.py     # Integration tests for the app
-│   └── requirements.txt        # Project-wide dependencies
+│   │   ├── models.py           # Pydantic models for data validation and database interaction
+│   │   ├── schemas.py          # Pydantic schemas for request and response validation
+│   │   ├── unit_tests.py       # Unit tests for FastAPI API endpoints
+│   │   └── requirements.txt    # Python dependencies for backend
+│   ├── Dockerfile              # Docker configuration for backend
+│   ├── integration_test.py     # Integration tests for the backend app
+│   └── requirements.txt        # Project-wide dependencies for backend
+├── frontend
+│   ├── index.html              # HTML template for frontend UI
+│   ├── script.js               # JavaScript for frontend logic
+│   ├── style.css               # CSS for frontend styling
+│   └── Dockerfile              # Docker configuration for frontend
 ├── README.md                   # Project documentation
+
 
 
 ```
