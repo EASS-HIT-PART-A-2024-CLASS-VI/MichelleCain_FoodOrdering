@@ -1,3 +1,4 @@
+# app/schemas.py
 from pydantic import BaseModel
 
 class ItemCreate(BaseModel):
@@ -5,7 +6,5 @@ class ItemCreate(BaseModel):
     description: str
     price: float
 
-class Item(ItemCreate):
+class Item(ItemCreate):  # כולל id
     id: str
-
-
