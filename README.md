@@ -20,7 +20,6 @@ Frontend:
 - 🌐 User Interface: A clean and responsive web interface for placing orders and managing the menu.
 - 🖱️ User Authentication: Secure login and registration features.
 - 🍽️ Order Placement: Users can browse the menu, select items, and place orders.
-- 📦 Order Tracking: A system to track the status of placed orders in real-time.
 - 💬 User Feedback: Allow users to leave reviews and ratings for the menu items.
 
 ---
