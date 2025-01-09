@@ -3,7 +3,8 @@ from pydantic import BaseModel
 
 class ItemCreate(BaseModel):
     name: str
-    quantity: int  # בטלפון מסוג מספר (כגון int או float)
+    description: str
+    price: float
 
 class Item(ItemCreate):  # כולל id
     id: str

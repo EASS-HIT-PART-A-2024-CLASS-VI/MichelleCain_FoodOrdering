@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to the Food Ordering App</h1>
+    
+    <!-- Form to create new orders -->
+    <h2>Create New Order</h2>
+    <form id="createOrderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br>
+        
+        <button type="submit">Add Order</button>
+    </form>
+
+    <hr>
+
+    <h2>Current Orders</h2>
+    <div id="ordersList"></div>
+
+    <hr>
+
+    <h2>Search Orders</h2>
+    <label for="searchName">Search by Name:</label>
+    <input type="text" id="searchName" name="searchName">
+    <button id="searchBtn">Search</button>
+    
+    <h2>Search Results</h2>
+    <div id="searchResults"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

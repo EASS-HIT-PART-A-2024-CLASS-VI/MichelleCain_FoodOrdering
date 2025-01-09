@@ -1,4 +1,5 @@
 # app/crud.py
+
 from bson.objectid import ObjectId
 from .database import order_collection
 from .schemas import ItemCreate, Item  # חשוב לשים לב לייבוא הנכון
@@ -8,7 +9,8 @@ def order_helper(order) -> dict:
     return {
         "id": str(order["_id"]),
         "name": order["name"],
-        "quantity": order["quantity"],
+        "description": order["description"],
+        "price": order["price"],
     }
 
 # יצירת הזמנה חדשה

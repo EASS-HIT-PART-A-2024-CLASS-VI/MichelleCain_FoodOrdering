@@ -1,7 +1,6 @@
-# app/main.py
 from fastapi import FastAPI, HTTPException
 from typing import Optional
-from .schemas import ItemCreate, Item  # תוקן הייבוא
+from .schemas import ItemCreate, Item  # שים לב לייבוא הנכון
 from .crud import create_order, get_orders, update_order, delete_order
 
 app = FastAPI()
@@ -20,19 +19,18 @@ async def get_orders_endpoint():
     return await get_orders()
 
 @app.put("/orders/{order_id}")
-async def update_order_endpoint(order_id: str, updated_order: Item):
-    updated_order = await update_order(order_id, updated_order)
+async def update_order_endpoint(order_id: int, updated_order: Item):
+    updated_order = await update_order(str(order_id), updated_order.dict())
     return {"message": "Order updated successfully!", "order": updated_order}
 
 @app.delete("/orders/{order_id}")
-async def delete_order_endpoint(order_id: str):
-    result = await delete_order(order_id)
+async def delete_order_endpoint(order_id: int):
+    result = await delete_order(str(order_id))
     if result["deleted_count"] == 0:
         raise HTTPException(status_code=404, detail="Order not found")
     return {"message": "Order deleted successfully!"}
 
 @app.get("/orders/search")
-async def search_orders(name: Optional[str] = None):
-    orders = await get_orders()
-    results = [order for order in orders if name and name.lower() in order["name"].lower()]
+async def search_orders(name: Optional[str] = None, category: Optional[str] = None):
+    results = [order for order in await get_orders() if (name in order["name"]) or (category in order["category"])]
     return {"orders": results}
