@@ -1,13 +1,11 @@
 # 🍔BiteMe: Food Ordering System
-This repository contains the code for a Food Ordering System that allows users to order food online, manage menu items, and handle food orders efficiently. The backend is built using FastAPI and follows SOLID principles for clean and modular design. 
-
+This repository contains the code for a Food Ordering System that allows users to order food online, manage menu items, and handle food orders efficiently. The backend is built using FastAPI and follows SOLID principles for clean and modular design.
 
 ![_png biteme logo (1)](https://github.com/user-attachments/assets/f7eed7ed-b51a-4a71-8b0e-5cec53db5d64)
 
-
 ---
 
-## 🚀 Features  
+## 🚀 Features
 
 Currently Available:
 Backend:
@@ -32,7 +30,8 @@ Backend:
 - ✅ Pydantic: Simplifies data validation and settings management.
 - 🐋 Docker: Containerization for portability and scalability.
 - 🧪 pytest: Unit and integration testing framework.
-Frontend (To Be Continued):
+
+Frontend:
 - React: JavaScript library for building user interfaces.
 - Redux: State management for frontend applications.
 - Axios: Promise-based HTTP client for making API requests.
@@ -42,7 +41,6 @@ Frontend (To Be Continued):
 ## 📂 Project Structure  
 
 ```plaintext
-
 ├── backend
 │   ├── app
 │   │   ├── __init__.py         # Package initializer
@@ -62,7 +60,6 @@ Frontend (To Be Continued):
 │   ├── style.css               # CSS for frontend styling
 │   └── Dockerfile              # Docker configuration for frontend
 ├── README.md                   # Project documentation
-
 
 
 ```
